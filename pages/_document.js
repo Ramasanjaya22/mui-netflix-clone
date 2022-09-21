@@ -1,19 +1,18 @@
-import React from "react";
+import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-
-export default class MyDocument extends Document{
-  render(){
+export default class MyDocument extends Document {
+  render() {
     return (
-    <Html>
-      <Head>
-        <link rel="shortcut icon" href="/nficon2016.ico" type="image/x-icon" />
+      <Html>
+        <Head lang="en">
+          <link rel="shortcut icon" href="/nficon2016.ico" />
         </Head>
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
-} 
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }

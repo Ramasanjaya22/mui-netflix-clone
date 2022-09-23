@@ -13,6 +13,7 @@ import React from "react";
 import BorderedBottomBox from "../../Wrapper/BorderedButtomBox";
 import { styled } from "@mui/material/styles";
 import { useState } from "react";
+import AddIcon from '@mui/icons-material/Add'
 
 const CustomAccordion = styled(Accordion)(({ theme }) => ({
   backgroundColor: theme.palette.grey[900],
@@ -52,7 +53,7 @@ function FAQ() {
             onChange={handleChange("panel1")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel1-content"
               id="panel1-header"
             >
@@ -78,7 +79,7 @@ function FAQ() {
             onChange={handleChange("panel2")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -99,7 +100,7 @@ function FAQ() {
             onChange={handleChange("panel3")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel3-content"
               id="panel3-header"
             >
@@ -127,7 +128,7 @@ function FAQ() {
             onChange={handleChange("panel4")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel4-content"
               id="panel4-header"
             >
@@ -148,7 +149,7 @@ function FAQ() {
             onChange={handleChange("panel5")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel5-content"
               id="panel5-header"
             >
@@ -168,7 +169,7 @@ function FAQ() {
             onChange={handleChange("panel6")}
           >
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel6-content"
               id="panel6-header"
             >

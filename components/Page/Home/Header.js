@@ -1,26 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
-import {
-  AppBar,
-  Button,
-  Container,
-  MenuItem,
-  Select,
-  TextField,
-  Toolbar,
-  Typography,
-} from "@mui/material";
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 import BorderedBottomBox from "../../Wrapper/BorderedButtomBox";
-const Header = () => {
+
+const Header = ({ OpenModal }) => {
   return (
     <BorderedBottomBox>
       <AppBar
         sx={{
           backgroundColor: "transparent",
           padding: "25px 20px",
-          position: 'absolute'
+          position: "absolute",
         }}
         elevation={0}
       >
@@ -59,7 +58,7 @@ const Header = () => {
               </Select>
             </Grid>
             <Grid item xs="auto">
-              <Button color="primary" variant="contained">
+              <Button color="primary" variant="contained" onClick={OpenModal}>
                 Sign in
               </Button>
             </Grid>
@@ -115,7 +114,7 @@ const Header = () => {
             textAlign="center"
             gutterBottom
           >
-            Watch anywhere. Cancel anytime
+            Watch anywhere. Cancel anytime.
           </Typography>
           <Typography
             variant="h6"
@@ -125,7 +124,7 @@ const Header = () => {
             sx={{ my: 3 }}
           >
             Ready to watch? Enter your email to create or restart your
-            membership
+            membership.
           </Typography>
           <Grid container>
             <Grid item xs>
@@ -143,7 +142,7 @@ const Header = () => {
                 color="primary"
                 sx={{ height: "100%", borderRadius: "2px" }}
               >
-                Get Started
+                Get started
               </Button>
             </Grid>
           </Grid>
